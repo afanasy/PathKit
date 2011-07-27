@@ -3,7 +3,6 @@
 PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective-C
 
 ## get
----
 
 *-(id)get:(id)path;*
 
@@ -25,8 +24,7 @@ PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective
     [dictionary get:@"dictionary/with"]; //returns @"dictionary"
     [dictionary get:@"dictionary/and/2"]; //returns @"inside"
 
-post
-----
+## post
 
 *-(void)post:path this:(id)value;*
 
@@ -62,8 +60,7 @@ post
     }
     */
 
-delete
-------
+## delete
 
 *-(void)delete:(id)path;*
 
@@ -93,8 +90,7 @@ delete
     }
     */
 
-merge
------
+## merge
 
 *-(void)merge:(id)value;*
 
@@ -143,8 +139,7 @@ merge
     }
     */
 
-License
-=======
+# License
 
 *FreeBSD license*
 
