@@ -1,9 +1,8 @@
-PathKit
-=======
+# PathKit
 
 PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective-C
 
-get
+## get
 ---
 
 *-(id)get:(id)path;*
