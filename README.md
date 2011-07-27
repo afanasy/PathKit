@@ -31,76 +31,103 @@ post
 
 -(void)post:path this:(id)value;
 
-[dictionary post:@"dictionary/some" this:@"keys"];
+    /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary",
+       "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+    */
 
-//produces
-/*
-dictionary = {
- "this": "is",
- "dictionary: {
-  "with":"dictionary",
-  "some":"keys",
-  "and":[
-   "an",
-   "array",
-   "inside"
-  ]
- }
-}
-*/
+    [dictionary post:@"dictionary/some" this:@"keys"];
+    
+    //produces
+    /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary",
+      "some":"keys",
+      "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+    */
 
 delete
 ------
 
 -(void)delete:(id)path;
 
-[dictionary delete:@"dictionary/and"];
+    /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary",
+       "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+    */
 
-//produces
-/*
-dictionary = {
- "this": "is",
- "dictionary: {
-  "with":"dictionary"
- }
-}
-*/
-
+    [dictionary delete:@"dictionary/and"];
+    
+    //produces
+    /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary"
+     }
+    }
+    */
 
 merge
 -----
 
 -(void)merge:(id)value;
 
-/*
-otherDictionary = {
- "this":{
-  "is":[
-   "other",
-   "dictionary"
-  ]
- }
-}
-*/
+    /*
+    otherDictionary = {
+     "this":{
+      "is":[
+       "other",
+       "dictionary"
+      ]
+     }
+    }
+    */
 
-[dictionary merge:otherDictionary];
+    [dictionary merge:otherDictionary];
 
-//produces
-/*
-dictionary = {
- "this":{
-  "is":[
-   "other",
-   "dictionary"
-  ]
- },
- "dictionary: {
-  "with":"dictionary",
-  "and":[
-   "an",
-   "array",
-   "inside"
-  ]
- }
-}
-*/
+    //produces
+    /*
+    dictionary = {
+     "this":{
+      "is":[
+       "other",
+       "dictionary"
+      ]
+     },
+     "dictionary: {
+      "with":"dictionary",
+      "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+    */
