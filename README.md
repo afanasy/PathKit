@@ -6,7 +6,7 @@ PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective
 get
 ---
 
--(id)get:(id)path;
+*-(id)get:(id)path;*
 
     /*
     dictionary = {
