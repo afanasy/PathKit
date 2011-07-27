@@ -29,7 +29,7 @@ get
 post
 ----
 
--(void)post:path this:(id)value;
+*-(void)post:path this:(id)value;*
 
     /*
     dictionary = {
@@ -66,7 +66,7 @@ post
 delete
 ------
 
--(void)delete:(id)path;
+*-(void)delete:(id)path;*
 
     /*
     dictionary = {
@@ -97,7 +97,7 @@ delete
 merge
 -----
 
--(void)merge:(id)value;
+*-(void)merge:(id)value;*
 
     /*
     otherDictionary = {
