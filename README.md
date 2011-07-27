@@ -147,6 +147,8 @@ merge
 License
 =======
 
+*FreeBSD license*
+
     Copyright 2011 Afanasy Kurakin. All rights reserved.
     
     Redistribution and use in source and binary forms, with or without modification, are
