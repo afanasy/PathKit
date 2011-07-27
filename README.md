@@ -1,30 +1,30 @@
 PathKit
 =======
 
-PathKit is a RESTful interface to NSDictionary and NSArray
+PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective-C
 
 get
 ---
 
 -(id)get:(id)path;
 
-/*
-dictionary = {
- "this": "is",
- "dictionary: {
-  "with":"dictionary",
-  "and":[
-   "an",
-   "array",
-   "inside"
-  ]
- }
-}
-*/
+    /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary",
+       "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+    */
 
-[dictionary get:@"this"]; //returns @"is"
-[dictionary get:@"dictionary/with"]; //returns @"dictionary"
-[dictionary get:@"dictionary/and/2"]; //returns @"inside"
+    [dictionary get:@"this"]; //returns @"is"
+    [dictionary get:@"dictionary/with"]; //returns @"dictionary"
+    [dictionary get:@"dictionary/and/2"]; //returns @"inside"
 
 post
 ----
