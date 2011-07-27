@@ -13,7 +13,7 @@ get
      "this": "is",
      "dictionary: {
       "with":"dictionary",
-       "and":[
+      "and":[
        "an",
        "array",
        "inside"
@@ -36,7 +36,7 @@ post
      "this": "is",
      "dictionary: {
       "with":"dictionary",
-       "and":[
+      "and":[
        "an",
        "array",
        "inside"
@@ -73,7 +73,7 @@ delete
      "this": "is",
      "dictionary: {
       "with":"dictionary",
-       "and":[
+      "and":[
        "an",
        "array",
        "inside"
@@ -100,6 +100,18 @@ merge
 *-(void)merge:(id)value;*
 
     /*
+    dictionary = {
+     "this": "is",
+     "dictionary: {
+      "with":"dictionary",
+      "and":[
+       "an",
+       "array",
+       "inside"
+      ]
+     }
+    }
+
     otherDictionary = {
      "this":{
       "is":[
