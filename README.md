@@ -1,9 +1,12 @@
+PathKit
+=======
+
 PathKit is a RESTful interface to NSDictionary and NSArray
 
 get
 ---
 
-- (id)get:(id)path;
+-(id)get:(id)path;
 
 /*
 dictionary = {
@@ -26,7 +29,7 @@ dictionary = {
 post
 ----
 
-- (void)post:path this:(id)value;
+-(void)post:path this:(id)value;
 
 [dictionary post:@"dictionary/some" this:@"keys"];
 
@@ -49,7 +52,7 @@ dictionary = {
 delete
 ------
 
-- (void)delete:(id)path;
+-(void)delete:(id)path;
 
 [dictionary delete:@"dictionary/and"];
 
@@ -67,7 +70,7 @@ dictionary = {
 merge
 -----
 
-- (void)merge:(id)value;
+-(void)merge:(id)value;
 
 /*
 otherDictionary = {
