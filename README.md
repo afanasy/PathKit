@@ -1,6 +1,6 @@
 # PathKit
 
-> PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective-C
+PathKit is a RESTful interface to NSDictionary and NSArray, written in Objective-C
 
 ## get
 
