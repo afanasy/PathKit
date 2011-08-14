@@ -195,18 +195,6 @@
 
 @end
 
-
-@implementation NSString (nextPathComponent)
-- (id)nextPathComponent:(NSUInteger*)loc {
-    NSRange r = [self rangeOfString:@"/" options:0 range:NSMakeRange(*loc, [self length])];
-    if (!r.length)
-        return nil;
-    *loc = r.location;
-    return [self substringWithRange:NSMakeRange(*loc, r.location)];
-}
-@end
-
-
 @implementation NSNull (deepMutableCopy)
 - (id)deepMutableCopy {
     return [self copy];
